@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.index-title {
+  background-image: url("./assets/index.jpg");
+  background-size: 100%;
+}
+
+/* Page CSS */
+.page-title {
+  font-size: 1.5rem;
+  font-weight: 550;
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.form-input {
+  font-size: 0.75rem;
+  width: 80%;
+  padding: 2px;
+  border: 1px solid #777373;
+  border-radius: 0.5rem;
+}
+
+.form-input:hover {
+  box-shadow: rgba(48, 47, 47, 0.35) 0px 5px 5px;
+}
+
+#docsubmit {
+  transition-duration: 0.25s;
+}
+
+/* Login Page CSS */
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login-laster {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Spinner CSS */
+.spinner-parent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+  border: 0.25em solid #f3f3f3;
+  border-top: 0.25em solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
